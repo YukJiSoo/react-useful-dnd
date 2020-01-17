@@ -1,0 +1,31 @@
+{
+	"name": "react-useful-dnd",
+	"version": "0.0.1",
+	"description": "This is drag & drop module useful in react!",
+	"main": "build/index.js",
+	"scripts": {
+		"dev:example": "webpack-dev-server --config ./config/webpack.config.dev",
+		"build:example": "webpack --config ./config/webpack.config.prod"
+	},
+	"author": "YukJiSoo",
+	"license": "ISC",
+	"dependencies": {
+		"react": "^16.12.0",
+		"react-dom": "^16.12.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.7.7",
+		"@babel/polyfill": "^7.7.0",
+		"@babel/preset-env": "^7.7.7",
+		"@babel/preset-react": "^7.7.4",
+		"babel-loader": "^8.0.6",
+		"clean-webpack-plugin": "^3.0.0",
+		"css-loader": "^3.4.1",
+		"html-webpack-plugin": "^3.2.0",
+		"style-loader": "^1.1.2",
+		"webpack": "^4.41.5",
+		"webpack-cli": "^3.3.10",
+		"webpack-dev-server": "^3.10.1",
+		"webpack-merge": "^4.2.2"
+	}
+}
