@@ -1,13 +1,14 @@
 import React from "react";
 import { useDraggable } from "../../lib";
 
-function Draggable({ id, className }) {
-	const draggableRef = useDraggable({ id });
+function Draggable() {
+	const [id, draggableRef] = useDraggable();
+
 	return (
-		<div className={className} ref={draggableRef}>
-			Draggable #{id}
+		<div ref={draggableRef} id={id}>
+			<h3>Draggable #{id}</h3>
 		</div>
 	);
 }
 
-export default Draggable;
+export default React.memo(Draggable);

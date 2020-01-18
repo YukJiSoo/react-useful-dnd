@@ -1,5 +1,17 @@
 .Draggable {
 	background-color: yellow;
-	width: 100px;
+	width: 450px;
 	margin: 10px;
+	padding: 30px;
+}
+
+.DropZone {
+	margin-top: 100px;
+	border: 1px solid red;
+	width: 600px;
+	padding: 10px;
+}
+
+.IsDragging {
+	opacity: 0.5;
 }
