@@ -12,7 +12,7 @@ function DropZone({ id, datas }) {
 	return (
 		<div className="DropZone-Wrapper">
 			<div id={dropZoneId} ref={droppableRef}>
-				{datas.map((data, index) => (
+				{datas.map(data => (
 					<Draggable key={data} data={data} />
 				))}
 			</div>
