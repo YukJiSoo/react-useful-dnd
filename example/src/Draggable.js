@@ -1,5 +1,5 @@
 import React from "react";
-import { useDraggable } from "../../lib";
+import { useDraggable } from "react-useful-dnd";
 
 function Draggable({ data }) {
 	const [id, draggableRef] = useDraggable();

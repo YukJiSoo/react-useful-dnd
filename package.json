@@ -1,17 +1,34 @@
 {
 	"name": "react-useful-dnd",
-	"version": "0.0.1",
+	"version": "0.0.5",
 	"description": "This is drag & drop module useful in react!",
-	"main": "build/index.js",
+	"main": "build/react-useful-dnd.js",
+	"engines": {
+		"node": ">= 12.14.0"
+	},
 	"scripts": {
 		"dev:example": "webpack-dev-server --config ./config/webpack.config.dev",
-		"build:example": "webpack --config ./config/webpack.config.prod"
+		"build:library": "webpack --config ./config/webpack.config.library"
 	},
-	"author": "YukJiSoo",
-	"license": "ISC",
+	"author": {
+		"name": "YukJiSoo",
+		"email": "wltn3231@naver.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/YukJiSoo/react-useful-dnd.git"
+	},
+	"keywords": [
+		"react",
+		"drag",
+		"drop",
+		"dnd",
+		"useful"
+	],
 	"dependencies": {
 		"react": "^16.12.0",
 		"react-dom": "^16.12.0",
+		"react-useful-dnd": "^0.0.5",
 		"uuid": "^3.4.0"
 	},
 	"devDependencies": {

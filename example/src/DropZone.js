@@ -1,7 +1,7 @@
 import React from "react";
 import Draggable from "Draggable";
 
-import { useDroppable } from "../../lib";
+import { useDroppable } from "react-useful-dnd";
 
 function DropZone({ id, datas }) {
 	const [dropZoneId, droppableRef, dataList] = useDroppable({
