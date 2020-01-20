@@ -1,6 +1,6 @@
 {
 	"name": "react-useful-dnd",
-	"version": "0.0.5",
+	"version": "0.0.8",
 	"description": "This is drag & drop module useful in react!",
 	"main": "build/react-useful-dnd.js",
 	"engines": {
@@ -28,7 +28,7 @@
 	"dependencies": {
 		"react": "^16.12.0",
 		"react-dom": "^16.12.0",
-		"react-useful-dnd": "^0.0.5",
+		"react-useful-dnd": "^0.0.8",
 		"uuid": "^3.4.0"
 	},
 	"devDependencies": {
