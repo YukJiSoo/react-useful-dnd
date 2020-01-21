@@ -6,6 +6,16 @@ custom hooks로 구현하였으며 drag & drop을 적용하고 싶은 component�
 
 <br>
 
+## 💻 install
+
+```bash
+yarn add react-useful-dnd
+
+npm install react-useful-dnd
+```
+
+<br>
+
 ## ✍️ usage
 
 component를 drag할 수 있도록 하기 위해서는 `useDraggable` 을 사용하고, drag요소를 drop하기 위해서는 `useDroppable` 을 사용합니다.
