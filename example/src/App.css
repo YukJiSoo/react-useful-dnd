@@ -1,3 +1,7 @@
+html {
+	height: 100%;
+}
+
 .Title {
 	text-align: center;
 	font-size: 3rem;
@@ -12,8 +16,9 @@
 .Draggable {
 	background-color: yellow;
 	width: 450px;
-	margin: 10px;
 	padding: 30px;
+
+	margin-bottom: 10px;
 }
 
 .DropZone-Wrapper {
@@ -21,7 +26,7 @@
 	flex-direction: column;
 }
 
-.DropZone {
+.Droppable {
 	margin-top: 100px;
 	border: 1px solid red;
 	width: 600px;

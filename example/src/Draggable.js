@@ -1,8 +1,8 @@
 import React from "react";
-import { useDraggable } from "react-useful-dnd";
+import { useDraggable } from "../../lib";
 
-function Draggable({ data }) {
-	const [id, draggableRef] = useDraggable();
+function Draggable({ data, groupId, droppableId }) {
+	const [draggableRef, id] = useDraggable({ droppableId, groupId });
 
 	return (
 		<div ref={draggableRef} id={id}>

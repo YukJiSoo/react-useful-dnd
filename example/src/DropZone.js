@@ -1,22 +1,24 @@
 import React from "react";
 import Draggable from "Draggable";
 
-import { useDroppable } from "react-useful-dnd";
+import { useDroppable } from "../../lib";
 
-function DropZone({ id, datas }) {
-	const [dropZoneId, droppableRef, dataList] = useDroppable({
+function DropZone({ id, context }) {
+	const [droppableRef, droppableId, datas, groupId] = useDroppable({
 		id,
-		items: datas
+		context
 	});
 
 	return (
-		<div className="DropZone-Wrapper">
-			<div id={dropZoneId} ref={droppableRef}>
-				{datas.map(data => (
-					<Draggable key={data} data={data} />
-				))}
-			</div>
-			<div className="State-Dashboard">{dataList.join(" / ")}</div>
+		<div id={droppableId} ref={droppableRef}>
+			{datas.map(item => (
+				<Draggable
+					key={groupId + "-" + droppableId + "-" + item}
+					data={item}
+					groupId={groupId}
+					droppableId={droppableId}
+				/>
+			))}
 		</div>
 	);
 }
